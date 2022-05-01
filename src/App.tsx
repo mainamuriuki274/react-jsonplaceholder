@@ -1,8 +1,5 @@
+import UsersTable from './components/UserTable';
 
-import UsersTable from "./components/UserTable";
-
-function App() {
-  return <UsersTable />;
-}
+const App = () => <UsersTable />;
 
 export default App;

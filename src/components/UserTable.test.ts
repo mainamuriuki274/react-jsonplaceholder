@@ -1,5 +1,7 @@
-describe("sample", () => {
-  it("sample", () => {
+describe('sample', () => {
+  it('sample', () => {
     expect(true);
   });
 });
+
+export {};
