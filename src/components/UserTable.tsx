@@ -1,5 +1,5 @@
-import React, { FunctionComponent, useEffect, useState } from "react";
-import axios from "axios";
+import { FunctionComponent, useEffect, useState } from 'react';
+import axios from 'axios';
 
 type User = {
   id: number;
@@ -11,7 +11,7 @@ const UsersTable: FunctionComponent = () => {
   const [users, setUsers] = useState<User[]>([]);
 
   useEffect(() => {
-    const url = "https://jsonplaceholder.typicode.com/users";
+    const url = 'https://jsonplaceholder.typicode.com/users';
     axios.get(url).then((response) => setUsers(response.data));
   }, []);
 
