@@ -1,0 +1,26 @@
+@use '../../styles/abstracts/' as *;
+
+.home_card_container {
+  text-decoration: none;
+  color: black;
+}
+
+.home_card {
+  width: 20rem;
+  min-height: 8rem;
+  margin: 1rem;
+  color: gray;
+  &:hover {
+    background-color: $bg-color;
+  }
+}
+
+.home_card_title {
+  color: $primary-color;
+}
+
+.home_card_footer {
+  border: none;
+  background-color: transparent;
+  color: $primary-color;
+}

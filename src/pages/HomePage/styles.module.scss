@@ -1,0 +1,19 @@
+@use '../../styles/abstracts/' as *;
+
+.home_container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.cards_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
