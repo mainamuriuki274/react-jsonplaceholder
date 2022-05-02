@@ -1,0 +1,16 @@
+@use './abstracts/' as *;
+@import '~bootstrap/scss/bootstrap';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $primary-font;
+}

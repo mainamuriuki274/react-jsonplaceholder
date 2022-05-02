@@ -1,5 +1,5 @@
-import UsersTable from './components/UserTable';
+import { Users } from './components/Users';
 
-const App = () => <UsersTable />;
+const App = () => <Users />;
 
 export default App;

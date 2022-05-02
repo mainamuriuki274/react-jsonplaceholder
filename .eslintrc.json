@@ -63,7 +63,8 @@
       }
     ],
     "comma-dangle": 0,
-    "@typescript-eslint/comma-dangle": ["error"]
+    "@typescript-eslint/comma-dangle": ["error"],
+    "import/prefer-default-export": 0
   },
   "settings": {
     "node": {
