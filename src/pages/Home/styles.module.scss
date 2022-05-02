@@ -1,0 +1,16 @@
+@use '../../styles/abstracts/' as *;
+
+.home_container {
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  width: 100%;
+  max-width: 80rem;
+  margin-bottom: 2re;
+  color: $secondary-color;
+}

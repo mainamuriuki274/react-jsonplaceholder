@@ -14,3 +14,10 @@ body {
 body {
   font-family: $primary-font;
 }
+
+.error {
+  color: $error-red;
+  font-weight: bold;
+  font-size: 0.9rem;
+  
+}

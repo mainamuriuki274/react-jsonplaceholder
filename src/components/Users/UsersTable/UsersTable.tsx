@@ -1,5 +1,7 @@
 import { FunctionComponent } from 'react';
 import { Table } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import styles from './styles.module.scss';
 
 interface User {
   id: number;
@@ -11,8 +13,8 @@ interface Props {
   users: User[];
 }
 
-const UsersTable: FunctionComponent<Props> = ({ users }: any) => (
-  <Table striped bordered>
+const UsersTable: FunctionComponent<Props> = ({ users }) => (
+  <Table striped bordered className={styles.user_table}>
     <thead>
       <tr>
         <th>id</th>
@@ -28,7 +30,7 @@ const UsersTable: FunctionComponent<Props> = ({ users }: any) => (
           <td>{user.name}</td>
           <td>{user.username}</td>
           <td>
-            <a href="/">View Posts</a>
+            <Link to={`/users/${user.id}/posts`}>View Posts</Link>
           </td>
         </tr>
       ))}
