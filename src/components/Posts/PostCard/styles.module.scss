@@ -1,0 +1,26 @@
+@use '../../../styles/abstracts/' as *;
+
+.post_card {
+  min-width: 20rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+.post_title {
+  color: $secondary-color;
+}
+
+.author {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  a {
+    color: gray;
+    text-decoration: none;
+    font-size: 0.9rem;
+    &:hover {
+      text-decoration: underline;
+      color: black;
+    }
+  }
+}

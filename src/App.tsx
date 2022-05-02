@@ -1,5 +1,11 @@
-import { Users } from './components/Users';
+import { FunctionComponent } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import BaseRouter from './constants/routes';
 
-const App = () => <Users />;
+const App: FunctionComponent = () => (
+  <Router>
+    <BaseRouter />
+  </Router>
+);
 
 export default App;

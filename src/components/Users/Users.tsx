@@ -2,16 +2,16 @@ import { FunctionComponent } from 'react';
 import { Loader } from '../Loader';
 import { UsersTable } from './UsersTable';
 import { Error } from '../Error';
-import { useFetch } from '../../hooks/useFetch';
+import { useFetchMany } from '../../hooks/useFetchMany';
 
-type User = {
+interface User {
   id: number;
   name: string;
   username: string;
-};
+}
 
 const Users: FunctionComponent = () => {
-  const { data: users, isPending, error } = useFetch<User>('/users');
+  const { data: users, isPending, error } = useFetchMany<User>('/users');
 
   if (isPending) return <Loader />;
 

@@ -1,0 +1,20 @@
+@use '../../styles/abstracts/' as *;
+
+.posts_grid {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+@include for-tablet-up {
+  .posts_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include for-laptop-up {
+  .posts_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

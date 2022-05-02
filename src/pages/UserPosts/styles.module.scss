@@ -1,0 +1,14 @@
+@use '../../styles/abstracts/' as *;
+
+.user_posts_container {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  width: 100%;
+  margin-bottom: 2rem;
+  color: $primary-color;
+}
