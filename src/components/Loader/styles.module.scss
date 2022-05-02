@@ -1,0 +1,19 @@
+@use '../../styles/abstracts/' as *;
+
+.spinner {
+  margin: 1rem;
+  color: #e5e7eb;
+  height: 2rem;
+  width: 2rem;
+  fill: black;
+  animation: spin 0.8s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
