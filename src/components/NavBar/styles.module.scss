@@ -1,0 +1,9 @@
+@use '../../styles/abstracts/' as *;
+
+.link {
+  text-decoration: none;
+  color: $off-white;
+  &:hover {
+    color: $secondary-color;
+  }
+}

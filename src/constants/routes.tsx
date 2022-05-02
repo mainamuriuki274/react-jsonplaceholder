@@ -3,25 +3,33 @@ import { Route, Routes } from 'react-router-dom';
 import { Loader } from '../components/Loader';
 
 const BaseRouter: FunctionComponent = () => {
-  const HomePage: React.LazyExoticComponent<React.FunctionComponent<{}>> =
+  const UsersPage: React.LazyExoticComponent<React.FunctionComponent<{}>> =
     React.lazy(() =>
-      import('../pages/Home').then((module) => ({
-        default: module.Home,
+      import('../pages/UsersPage').then((module) => ({
+        default: module.UsersPage,
       })),
     );
 
-  const UserPosts: React.LazyExoticComponent<React.FunctionComponent<{}>> =
+  const UserPostsPage: React.LazyExoticComponent<React.FunctionComponent<{}>> =
     React.lazy(() =>
-      import('../pages/UserPosts').then((module) => ({
-        default: module.UserPosts,
+      import('../pages/UserPostsPage').then((module) => ({
+        default: module.UserPostsPage,
+      })),
+    );
+
+  const PostsPage: React.LazyExoticComponent<React.FunctionComponent<{}>> =
+    React.lazy(() =>
+      import('../pages/PostsPage').then((module) => ({
+        default: module.PostsPage,
       })),
     );
 
   return (
     <Suspense fallback={<Loader />}>
       <Routes>
-        <Route path="/users" element={<HomePage />} />
-        <Route path="/users/:userId/posts" element={<UserPosts />} />
+        <Route path="/posts" element={<PostsPage />} />
+        <Route path="/users" element={<UsersPage />} />
+        <Route path="/users/:userId/posts" element={<UserPostsPage />} />
       </Routes>
     </Suspense>
   );
