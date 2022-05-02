@@ -12,11 +12,11 @@ interface Post {
   body: string;
 }
 
-interface Props {
-  userId: string | undefined;
+interface PostsProps {
+  userId?: string | undefined;
 }
 
-const Posts: FunctionComponent<Props> = ({ userId }) => {
+const Posts: FunctionComponent<PostsProps> = ({ userId }) => {
   const {
     data: posts,
     isPending,
@@ -34,6 +34,10 @@ const Posts: FunctionComponent<Props> = ({ userId }) => {
       ))}
     </div>
   );
+};
+
+Posts.defaultProps = {
+  userId: undefined,
 };
 
 export default Posts;

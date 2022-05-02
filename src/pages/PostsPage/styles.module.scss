@@ -1,7 +1,6 @@
 @use '../../styles/abstracts/' as *;
 
-.home_container {
-  width: 100%;
+.posts_container {
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -10,7 +9,6 @@
 
 .title {
   width: 100%;
-  max-width: 80rem;
-  margin-bottom: 2re;
-  color: $secondary-color;
+  margin-bottom: 2rem;
+  color: $primary-color;
 }
