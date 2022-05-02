@@ -1,7 +1,5 @@
 .loading_dots > div {
   display: inline;
-  position: relative;
-  top: -1em;
   font-size: 3.5em;
   opacity: 0;
   animation: showHideDot 1s ease-in-out infinite;
