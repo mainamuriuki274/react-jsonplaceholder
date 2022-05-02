@@ -24,9 +24,17 @@ const BaseRouter: FunctionComponent = () => {
       })),
     );
 
+  const HomePage: React.LazyExoticComponent<React.FunctionComponent<{}>> =
+    React.lazy(() =>
+      import('../pages/HomePage').then((module) => ({
+        default: module.HomePage,
+      })),
+    );
+
   return (
     <Suspense fallback={<Loader />}>
       <Routes>
+        <Route path="/" element={<HomePage />} />
         <Route path="/posts" element={<PostsPage />} />
         <Route path="/users" element={<UsersPage />} />
         <Route path="/users/:userId/posts" element={<UserPostsPage />} />
