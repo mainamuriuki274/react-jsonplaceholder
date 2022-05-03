@@ -16,6 +16,13 @@ const BaseRouter: FunctionComponent = () => {
         default: module.UserPostsPage,
       })),
     );
+  // eslint-disable-next-line prettier/prettier
+  const UserDetailsPage: React.LazyExoticComponent<React.FunctionComponent<{}>
+  > = React.lazy(() =>
+    import('../pages/UserDetailsPage').then((module) => ({
+      default: module.UserDetailsPage,
+    })),
+  );
 
   const PostsPage: React.LazyExoticComponent<React.FunctionComponent<{}>> =
     React.lazy(() =>
@@ -37,6 +44,7 @@ const BaseRouter: FunctionComponent = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/posts" element={<PostsPage />} />
         <Route path="/users" element={<UsersPage />} />
+        <Route path="/users/:userId" element={<UserDetailsPage />} />
         <Route path="/users/:userId/posts" element={<UserPostsPage />} />
       </Routes>
     </Suspense>

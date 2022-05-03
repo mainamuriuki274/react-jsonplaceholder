@@ -1,4 +1,5 @@
 import { FunctionComponent } from 'react';
+import { FaEdit } from 'react-icons/fa';
 import { Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import styles from './styles.module.scss';
@@ -31,6 +32,11 @@ const UsersTable: FunctionComponent<Props> = ({ users }) => (
           <td>{user.username}</td>
           <td>
             <Link to={`/users/${user.id}/posts`}>View Posts</Link>
+          </td>
+          <td>
+            <Link to={`/users/${user.id}`}>
+              <FaEdit />
+            </Link>
           </td>
         </tr>
       ))}
