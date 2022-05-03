@@ -3,12 +3,7 @@ import { Loader } from '../Loader';
 import { UsersTable } from './UsersTable';
 import { Error } from '../Error';
 import { useFetchMany } from '../../hooks/useFetchMany';
-
-interface User {
-  id: number;
-  name: string;
-  username: string;
-}
+import { User } from '../../interfaces/userInterface';
 
 const Users: FunctionComponent = () => {
   const { data: users, isPending, error } = useFetchMany<User>('/users');

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User Detail Component it matches snapshot 1`] = `
+<p>
+  <span
+    className="label"
+  >
+    Test Label
+  </span>
+  <span
+    className="value"
+  >
+    Test Value
+  </span>
+</p>
+`;
