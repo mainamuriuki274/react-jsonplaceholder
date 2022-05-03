@@ -5,7 +5,7 @@ import styles from './styles.module.scss';
 const Error: FunctionComponent = () => (
   <div className={styles.error}>
     <BiErrorCircle />
-    <p>Unfortunately an error occured while fetching the resource </p>
+    <p>Unfortunately an error occured while fetching the resource</p>
   </div>
 );
 

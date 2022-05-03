@@ -12,21 +12,15 @@ const NavBar: FunctionComponent = () => (
         </Link>
       </Navbar.Brand>
       <Nav className="justify-content-end">
-        <Nav.Link>
-          <Link className={styles.link} to="/">
-            Home
-          </Link>
-        </Nav.Link>
-        <Nav.Link>
-          <Link className={styles.link} to="/users">
-            Users
-          </Link>
-        </Nav.Link>
-        <Nav.Link>
-          <Link className={styles.link} to="/posts">
-            Posts
-          </Link>
-        </Nav.Link>
+        <Link id="RouterNavLink" className={styles.link} to="/">
+          Home
+        </Link>
+        <Link id="RouterNavLink" className={styles.link} to="/users">
+          Users
+        </Link>
+        <Link className={styles.link} to="/posts">
+          Posts
+        </Link>
       </Nav>
     </Container>
   </Navbar>

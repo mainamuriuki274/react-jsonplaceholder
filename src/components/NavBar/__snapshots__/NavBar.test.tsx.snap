@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error Component it matches snapshot 1`] = `
+<nav
+  className="navbar navbar-expand navbar-dark bg-dark sticky-top"
+>
+  <div
+    className="container"
+  >
+    <span
+      className="navbar-brand"
+    >
+      <a
+        className="link"
+        href="/"
+        onClick={[Function]}
+      >
+        Savannah Informatics
+      </a>
+    </span>
+    <div
+      className="justify-content-end navbar-nav"
+      onKeyDown={[Function]}
+    >
+      <a
+        className="link"
+        href="/"
+        id="RouterNavLink"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+      <a
+        className="link"
+        href="/users"
+        id="RouterNavLink"
+        onClick={[Function]}
+      >
+        Users
+      </a>
+      <a
+        className="link"
+        href="/posts"
+        onClick={[Function]}
+      >
+        Posts
+      </a>
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`NavBar Component it matches snapshot 1`] = `
+<nav
+  className="navbar navbar-expand navbar-dark bg-dark sticky-top"
+>
+  <div
+    className="container"
+  >
+    <span
+      className="navbar-brand"
+    >
+      <a
+        className="link"
+        href="/"
+        onClick={[Function]}
+      >
+        Savannah Informatics
+      </a>
+    </span>
+    <div
+      className="justify-content-end navbar-nav"
+      onKeyDown={[Function]}
+    >
+      <a
+        className="link"
+        href="/"
+        id="RouterNavLink"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+      <a
+        className="link"
+        href="/users"
+        id="RouterNavLink"
+        onClick={[Function]}
+      >
+        Users
+      </a>
+      <a
+        className="link"
+        href="/posts"
+        onClick={[Function]}
+      >
+        Posts
+      </a>
+    </div>
+  </div>
+</nav>
+`;
