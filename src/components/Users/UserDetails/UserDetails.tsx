@@ -1,23 +1,8 @@
 import { FunctionComponent } from 'react';
+import { User } from '../../../interfaces/detailedUserInterface';
 import { EditField } from '../../EditField';
 import UserDetail from '../UserDetail/UserDetail';
 import styles from './styles.module.scss';
-
-interface Address {
-  street: string;
-  suite: string;
-  city: string;
-  zipcode: string;
-}
-
-interface User {
-  id: number;
-  name: string;
-  username: string;
-  email: string;
-  address: Address;
-  phone: string;
-}
 
 interface UserDetailsProps {
   user: User;

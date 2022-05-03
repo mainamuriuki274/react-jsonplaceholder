@@ -5,13 +5,8 @@ import { Layout } from '../../components/Layout';
 import { Loader } from '../../components/Loader';
 import { Posts } from '../../components/Posts';
 import { useFetch } from '../../hooks/useFetch';
+import { User } from '../../interfaces/userInterface';
 import styles from './styles.module.scss';
-
-type User = {
-  id: number;
-  name: string;
-  username: string;
-};
 
 const Home: FunctionComponent = () => {
   const { userId } = useParams();

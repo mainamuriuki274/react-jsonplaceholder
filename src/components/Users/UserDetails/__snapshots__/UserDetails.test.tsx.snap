@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User Details Component it matches snapshot 1`] = `
+<div
+  className="user_details_container"
+>
+  <div>
+    <h2>
+      Personal Details
+    </h2>
+    <form
+      className="edit_field_form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="form_group"
+      >
+        <div
+          className="form_input"
+        >
+          <label
+            className="form-label"
+            htmlFor="name"
+          >
+            Name
+          </label>
+           
+          <input
+            className="form-control form-control-sm"
+            id="name"
+            name="name"
+            onChange={[Function]}
+            required={true}
+            type="text"
+            value="Leanne Graham"
+          />
+        </div>
+      </div>
+    </form>
+    <p>
+      <span
+        className="label"
+      >
+        Username
+      </span>
+      <span
+        className="value"
+      >
+        Bret
+      </span>
+    </p>
+  </div>
+  <div>
+    <h2>
+      Contact Information
+    </h2>
+    <p>
+      <span
+        className="label"
+      >
+        Email
+      </span>
+      <span
+        className="value"
+      >
+        Sincere@april.biz
+      </span>
+    </p>
+    <p>
+      <span
+        className="label"
+      >
+        Phonenumber
+      </span>
+      <span
+        className="value"
+      >
+        1-770-736-8031 x56442
+      </span>
+    </p>
+  </div>
+  <div>
+    <h2>
+      Address Details
+    </h2>
+    <p>
+      <span
+        className="label"
+      >
+        Street
+      </span>
+      <span
+        className="value"
+      >
+        Kulas Light
+      </span>
+    </p>
+    <p>
+      <span
+        className="label"
+      >
+        Suite
+      </span>
+      <span
+        className="value"
+      >
+        Apt. 556
+      </span>
+    </p>
+    <p>
+      <span
+        className="label"
+      >
+        City
+      </span>
+      <span
+        className="value"
+      >
+        Gwenborough
+      </span>
+    </p>
+    <p>
+      <span
+        className="label"
+      >
+        Zip Code
+      </span>
+      <span
+        className="value"
+      >
+        92998-3874
+      </span>
+    </p>
+  </div>
+</div>
+`;

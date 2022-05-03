@@ -3,12 +3,7 @@ import { FaEdit } from 'react-icons/fa';
 import { Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import styles from './styles.module.scss';
-
-interface User {
-  id: number;
-  name: string;
-  username: string;
-}
+import { User } from '../../../interfaces/userInterface';
 
 interface Props {
   users: User[];
