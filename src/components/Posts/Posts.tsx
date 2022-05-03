@@ -4,13 +4,7 @@ import { Error } from '../Error';
 import { PostCard } from './PostCard';
 import styles from './styles.module.scss';
 import { useFetchMany } from '../../hooks/useFetchMany';
-
-interface Post {
-  userId: number;
-  id: number;
-  title: string;
-  body: string;
-}
+import { Post } from '../../interfaces/postInterface';
 
 interface PostsProps {
   userId?: string | undefined;

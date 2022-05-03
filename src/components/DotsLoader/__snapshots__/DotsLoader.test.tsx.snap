@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dots Loader Component it matches snapshot 1`] = `
+<div
+  className="loading_dots"
+>
+  <div>
+    .
+  </div>
+  <div>
+    .
+  </div>
+  <div>
+    .
+  </div>
+</div>
+`;
