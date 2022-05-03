@@ -7,7 +7,7 @@ import styles from './styles.module.scss';
 interface HomeCardProps {
   link: string;
   title: string;
-  description: string;
+  description: string | number;
 }
 
 const HomeCard: FunctionComponent<HomeCardProps> = ({
